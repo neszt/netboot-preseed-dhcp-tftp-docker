@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  server:
+    image: neszt/netboot-preseed-dhcp-tftp-docker:$VERSION
+    restart: always
+    network_mode: "host"
+    environment:
+      - IFACE=$IFACE
+    volumes:
+      - ./data:/data
+
