@@ -1,7 +1,7 @@
 FROM debian:bookworm
 
-MAINTAINER Neszt Tibor <tibor@neszt.hu>
-LABEL org.opencontainers.image.source https://github.com/neszt/netboot-preseed-dhcp-tftp-docker
+LABEL org.opencontainers.image.authors="Neszt Tibor <tibor@neszt.hu>"
+LABEL org.opencontainers.image.source="https://github.com/neszt/netboot-preseed-dhcp-tftp-docker"
 
 RUN \
 	apt-get update && apt-get -y dist-upgrade && \
