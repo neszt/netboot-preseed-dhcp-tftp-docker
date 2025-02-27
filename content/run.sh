@@ -61,6 +61,12 @@ cp -va /data/pre* /data/post* /tmp/
 find . | cpio -H newc -o | gzip -c1 > $INITRD
 
 #
+# NON-FREE-FIRMWARE
+#
+
+cat /firmware.cpio.gz >> $INITRD
+
+#
 # SUPERVISOR
 #
 
