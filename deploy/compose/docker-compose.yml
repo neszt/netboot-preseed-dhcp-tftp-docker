@@ -9,4 +9,3 @@ services:
       - IFACE=$IFACE
     volumes:
       - ./data:/data
-
