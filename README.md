@@ -18,5 +18,5 @@ $ docker run -it --rm --network=host --env-file=.env -v $(pwd)/data:/data neszt/
 
 ### docker-compose
 ```bash
-$ docker-compose up
+$ ./start.sh
 ```
